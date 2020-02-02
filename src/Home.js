@@ -4,7 +4,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 
@@ -37,6 +37,16 @@ export default function HomePage() {
   const [myMap, setMap] = React.useState();
   const [myMaps, setMaps] = React.useState();
   const [myRender, setRender] = React.useState();
+
+  const ColorButton = withStyles(theme => ({
+    root: {
+      color: '#FFC904',
+      backgroundColor: '#000000',
+      '&:hover': {
+        backgroundColor: '#2b2b2b',
+      },
+    },
+  }))(Button);
 
   const getGarageStatus = async () => {
     // Make a request for a user with a given ID
@@ -200,30 +210,30 @@ export default function HomePage() {
           alignItems="center"
         >
           <div className={classes.root}>
-            <Button variant="contained" color="primary" onClick={() => handleDestinationChange('CB1')}>
+            <ColorButton variant="contained" color="primary" onClick={() => handleDestinationChange('CB1')}>
               Classrooms 1
-            </Button>
-            <Button variant="contained" color="primary" onClick={() => handleDestinationChange('CB2')}>
+            </ColorButton>
+            <ColorButton variant="contained" color="primary" onClick={() => handleDestinationChange('CB2')}>
               Classrooms 2
-            </Button>
-            <Button variant="contained" color="primary" onClick={() => handleDestinationChange('Library')}>
+            </ColorButton>
+            <ColorButton variant="contained" color="primary" onClick={() => handleDestinationChange('Library')}>
               Library
-            </Button>
-            <Button variant="contained" color="primary" onClick={() => handleDestinationChange('SU')}>
+            </ColorButton>
+            <ColorButton variant="contained" color="primary" onClick={() => handleDestinationChange('SU')}>
               Student Union
-            </Button>
-            <Button variant="contained" color="primary" onClick={() => handleDestinationChange('ENG')}>
+            </ColorButton>
+            <ColorButton variant="contained" color="primary" onClick={() => handleDestinationChange('ENG')}>
               Engineering
-            </Button>
-            <Button variant="contained" color="primary" onClick={() => handleDestinationChange('Business')}>
+            </ColorButton>
+            <ColorButton variant="contained" color="primary" onClick={() => handleDestinationChange('Business')}>
               Business
-            </Button>
-            <Button variant="contained" color="primary" onClick={() => handleDestinationChange('HEC')}>
+            </ColorButton>
+            <ColorButton variant="contained" color="primary" onClick={() => handleDestinationChange('HEC')}>
               Harris Center
-            </Button>
-            <Button variant="contained" color="primary" onClick={() => handleDestinationChange('MSB')}>
+            </ColorButton>
+            <ColorButton variant="contained" color="primary" onClick={() => handleDestinationChange('MSB')}>
               Math Sciences
-            </Button>
+            </ColorButton>
           </div>
         </Grid>
         <Button color="secondary" onClick={() => handleReset()}>Reset</Button>
