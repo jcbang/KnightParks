@@ -1,0 +1,82 @@
+{
+    "Garage A": {
+        "CB1": 2100,
+        "CB2": 2400,
+        "Library": 1300,
+        "SU": 1800,
+        "Business": 2100,
+        "ENG": 2400,
+        "HEC": 2500,
+        "MSB": 1600
+    },
+    "Garage B": {
+        "CB1": 2500,
+        "CB2": 2400,
+        "Library": 1300,
+        "SU": 1800,
+        "Business": 1600,
+        "ENG": 1900,
+        "HEC": 1600,
+        "MSB": 1000        
+    },
+    "Garage C": {
+        "CB1": 1500,
+        "CB2": 1500,
+        "Library": 1800,
+        "SU": 1400,
+        "Business": 1000,
+        "ENG": 800,
+        "HEC": 800,
+        "MSB": 1700           
+    },
+    "Garage D": {
+        "CB1": 1100,
+        "CB2": 1000,
+        "Library": 2100,
+        "SU": 1500,
+        "Business": 1500,
+        "ENG": 1200,
+        "HEC": 1600,
+        "MSB": 2200    
+    },
+    "Garage E": {
+        "CB1": 1900,
+        "CB2": 1700,
+        "Library": 3000,
+        "SU": 2300,
+        "Business": 2300,
+        "ENG": 2000,
+        "HEC": 2200,
+        "MSB": 3000          
+    },
+    "Garage F": {
+        "CB1": 2000,
+        "CB2": 1800,
+        "Library": 3300,
+        "SU": 2600,
+        "Business": 2800,
+        "ENG": 2500,
+        "HEC": 3000,
+        "MSB": 3400  
+    },
+    "Garage H": {
+        "CB1": 450,
+        "CB2": 200,
+        "Library": 1600,
+        "SU": 1000,
+        "Business": 1600,
+        "ENG": 1400,
+        "HEC": 2000,
+        "MSB": 1900  
+    },
+    "Garage I": {
+        "CB1": 1600,
+        "CB2": 1900,
+        "Library": 1600,
+        "SU": 1400,
+        "Business": 1800,
+        "ENG": 2000,
+        "HEC": 2300,
+        "MSB": 1400  
+    }
+}
